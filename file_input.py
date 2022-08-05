@@ -22,7 +22,7 @@ email.send_keys("ivan@gmail.com")
 
 file = driver.find_element(By.ID, "file")
 current_dir = os.path.abspath(os.path.dirname(__file__))
-file_path = os.path.join(current_dir, 'test.txt')
+file_path = os.path.join(current_dir, 'file_input.txt')
 file.send_keys(file_path)
 
 submit = driver.find_element(By.XPATH, "/html/body/div/form/button")
